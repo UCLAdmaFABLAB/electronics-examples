@@ -17,7 +17,7 @@ ShiftIn<1> shift;
 void setup() {
   Keyboard.begin();
   // declare pins: pLoadPin, clockEnablePin, dataPin, clockPin
-  shift.begin(2, 4, 3, 1);
+  shift.begin(2, 0 /*WAS 4*/, 3, 1);
 }
 
 void loop() {
