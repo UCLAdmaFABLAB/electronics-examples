@@ -9,6 +9,12 @@
 #include <ShiftIn.h>
 #include "Keyboard.h"
 
+const int LOL_BUTTON = 7;
+const int WTF_BUTTON = 6;
+const int SMH_BUTTON = 5;
+const int OMG_BUTTON = 4;
+
+
 // Init ShiftIn instance with one chip.
 // The number in brackets defines the number of daisy-chained 74HC165 chips
 // So if you are using two chips, you would write: ShiftIn<2> shift;
@@ -23,16 +29,16 @@ void setup() {
 
 void loop() {
   if (shift.update()) {
-    if (shift.state(7)) {
+    if (shift.state(LOL_BUTTON)) {
       Keyboard.print("lol\n");
     }
-    if (shift.state(6)) {
+    if (shift.state(WTF_BUTTON)) {
       Keyboard.print("wtf\n");
     }
-    if (shift.state(5)) {
+    if (shift.state(SMH_BUTTON)) {
       Keyboard.print("smh\n");
     }
-    if (shift.state(4)) {
+    if (shift.state(OMG_BUTTON)) {
       Keyboard.print("omg\n");
     }
     delay(1);
