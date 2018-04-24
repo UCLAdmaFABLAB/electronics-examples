@@ -4,4 +4,4 @@ This code also uses the [ShiftIn](https://github.com/InfectedBytes/ArduinoShiftI
 
 ![Circuit Image](https://github.com/brysonian/ucla-152-tangible-media/raw/master/Shift_In_Internet_Keyboard/circuit.png)
 
-Note that you can add 4 more binary inputs than shown here for a total of 8.
+Note that you can add 4 more binary inputs (on the pins shown connected to ground with the grey wires) for a total of 8.
