@@ -16,8 +16,9 @@ ShiftIn<1> shift;
 
 void setup() {
   Keyboard.begin();
+
   // declare pins: pLoadPin, clockEnablePin, dataPin, clockPin
-  shift.begin(2, 0 /*WAS 4*/, 3, 1);
+  shift.begin(2, 0, 3, 1);
 }
 
 void loop() {
@@ -32,9 +33,6 @@ void loop() {
       Keyboard.print("smh\n");
     }
     if (shift.state(4)) {
-      Keyboard.print("OK\n");
-    }
-    if (shift.state(0)) {
       Keyboard.print("omg\n");
     }
     delay(1);
