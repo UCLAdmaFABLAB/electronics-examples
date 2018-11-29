@@ -1,4 +1,4 @@
-# Using the Feather 32u4 DRV8871 Motor Driver
+# Using the Feather 32u4 with the DRV8871 Motor Driver
 
 Wiring Diagram:
 
