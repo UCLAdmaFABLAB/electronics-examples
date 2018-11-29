@@ -43,6 +43,11 @@ void reverse() {
 
 void coast() {
   digitalWrite(MOTOR_FORWARD_PIN, LOW);
+  digitalWrite(MOTOR_REVERSE_PIN, LOW);
+}
+
+void brake() {
+  digitalWrite(MOTOR_FORWARD_PIN, HIGH);
   digitalWrite(MOTOR_REVERSE_PIN, HIGH);
 }
 
