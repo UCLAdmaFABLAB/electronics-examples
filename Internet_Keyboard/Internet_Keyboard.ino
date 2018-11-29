@@ -1,8 +1,8 @@
 #include "Keyboard.h"
 
-const int button1 = 0;
-const int button2 = 1;
-const int button3 = 2;
+const int button1 = 10;
+const int button2 = 11;
+const int button3 = 12;
 
 int lastButton1 = HIGH;
 int lastButton2 = HIGH;
