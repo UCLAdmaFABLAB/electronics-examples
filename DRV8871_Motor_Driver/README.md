@@ -2,7 +2,7 @@
 
 Wiring Diagram:
 
-![Circuit Image](https://github.com/brysonian/ucla-152-tangible-media/raw/master/Shift_In_Internet_Keyboard/TrinketM0_Shift_In.png)
+![Circuit Image](https://github.com/brysonian/ucla-152-tangible-media/raw/master/DRV8871_Motor_Driver/DRV8871.png)
 
 
 
