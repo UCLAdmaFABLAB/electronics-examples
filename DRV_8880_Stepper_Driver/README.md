@@ -14,9 +14,9 @@ A 3.3 V output from the DRV8880’s internal regulator is made available on the 
 
 ### Wiring
 
-![Basic wiring diagram](DRV_8880_Stepper_Driver/DRV8880_basic_wiring.png)
+![Basic wiring diagram](DRV8880_basic_wiring.png)
 
-![Breadboard wiring diagram](DRV_8880_Stepper_Driver/DRV8880_bb.png)
+![Breadboard wiring diagram](DRV8880_bb.png)
 
 ### Microstep configuration
 DRV8880 will move one "microstep" for every pulse on the `STEP` pin. 
