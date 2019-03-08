@@ -1,1 +1,1 @@
-Miscellaneous code and circuit examples for parts in the FabLab.
+For code examples please see https://github.com/UCLAdmaFABLAB/Circuits
