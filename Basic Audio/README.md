@@ -23,3 +23,4 @@ void loop() {
 For more complexity, look at the `song` sketch which includes a notes file with constants for standard note names. Using the notes file will make it easier to convert existing music.
 
 If you want something more sophisticated, check out [Mozzi](https://sensorium.github.io/Mozzi/)
+Also, checkout [https://github.com/robsoncouto/arduino-songs](https://github.com/robsoncouto/arduino-songs) for more songs of varying complexity.
