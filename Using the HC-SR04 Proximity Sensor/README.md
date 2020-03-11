@@ -10,7 +10,7 @@ The HC-SR04 gets triggered by a ten microsecond high  signal on the trigger pin.
 
 Checking how long the echo pin of the module is high calculates the measured distance. 
 
-In our code, we use the `[delayMicroseconds](https://www.arduino.cc/reference/en/language/functions/time/delaymicroseconds/)` function to initiate the pulse, and the `[pulseIn](https://www.arduino.cc/reference/en/language/functions/advanced-io/pulsein/)` function to get the time between the pulse and the echo. 
+In our code, we use the [`delayMicroseconds`](https://www.arduino.cc/reference/en/language/functions/time/delaymicroseconds/) function to initiate the pulse, and the [`pulseIn`](https://www.arduino.cc/reference/en/language/functions/advanced-io/pulsein/) function to get the time between the pulse and the echo. 
 
 Once we have the echo time, there is a formula that must be applied to convert to a usable unit like centimeters.
 
