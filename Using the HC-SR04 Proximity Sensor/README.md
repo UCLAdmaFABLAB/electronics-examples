@@ -1,6 +1,6 @@
 # Using the Feather 32u4 with the HC-SR04 Proximity Sensor
 
-![Circuit Image](https://github.com/brysonian/ucla-152-tangible-media/raw/master/Using the HC-SR04 Proximity Sensor/HC-SR04.png)
+![Circuit Image](https://github.com/UCLAdmaFABLAB/electronics-examples/raw/trunk/Using%20the%20HC-SR04%20Proximity%20Sensor/HC-SR04.png)
 
 The HC-SR04 Proximity sensor uses ultrasound pulses and echos to detect the presence of objects from 2cm to 400cm. In reality the range seems to be much shorter than that. And the accuracy of the measurement depends in large part on how large of an object you are trying to detect. For large objects like walls you will be able to get more accurate measurements, for smaller things the range will be shorter.
 
