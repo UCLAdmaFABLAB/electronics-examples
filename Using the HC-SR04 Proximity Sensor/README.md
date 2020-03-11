@@ -14,7 +14,7 @@ In our code, we use the [`delayMicroseconds`](https://www.arduino.cc/reference/e
 
 Once we have the echo time, there is a formula that must be applied to convert to a usable unit like centimeters.
 
-In the code below, there is an if statement that prints "Out of range" when the value is less than 0 or more than 200, this should help eliminate some erratic and invalid values. To use this code in a real project, you would want to use the value of `distance` when it is between 0 and 200. Look at the [proximity_blinker](https://github.com/UCLAdmaFABLAB/electronics-examples/tree/trunk/Using the HC-SR04 Proximity Sensor/proximity_blinker) example for more.
+In the code below, there is an if statement that prints "Out of range" when the value is less than 0 or more than 200, this should help eliminate some erratic and invalid values. To use this code in a real project, you would want to use the value of `distance` when it is between 0 and 200. Look at the [proximity_blinker](https://github.com/UCLAdmaFABLAB/electronics-examples/blob/trunk/Using%20the%20HC-SR04%20Proximity%20Sensor/proximity_blinker/proximity_blinker.ino) example for more.
 
 ```c
 const int TRIGGER_PIN = 6;
