@@ -1,6 +1,6 @@
 # Using the Feather 32u4 with the DRV8871 Motor Driver
 
-![Circuit Image](https://github.com/brysonian/ucla-152-tangible-media/raw/master/DRV8871_Motor_Driver/DRV8871.png)
+![Circuit Image](DRV8871.png)
 
 To use this, you basically just set one pin high and the other low to drive in one direction, flip it to go the other way, set both high to brake, and both low to "coast." You can also use PWM to control speed.
 
