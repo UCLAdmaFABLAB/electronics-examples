@@ -8,6 +8,11 @@
  *  
  *  Adapted from
  *  https://github.com/laurb9/StepperDriver/blob/master/src/BasicStepperDriver.h
+ *
+ *  B1 -> red
+ *  B2 -> yellow
+ *  A2 -> gray
+ *  A1 -> green
  */
  
 const int DIR_PIN = 5;
@@ -26,7 +31,6 @@ bool dirBackward = false;
 int numSteps = 0;
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(DIR_PIN, OUTPUT);
   pinMode(STEP_PIN, OUTPUT);
   digitalWrite(DIR_PIN, LOW);
@@ -34,7 +38,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   digitalWrite(DIR_PIN, dirBackward);
   
   if (numSteps < MICROSTEPS_PER_ROTATION) {

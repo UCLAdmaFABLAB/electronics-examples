@@ -33,7 +33,6 @@ void loop() {
   for (uint8_t i = 0; i < 12; i++) {
     // it if *is* touched and *wasnt* touched before, alert!
     if ((currtouched & _BV(i)) && !(lasttouched & _BV(i))) {
-      // if the "1" channel is touched, turn the LED on
       if (i == 0) {
         digitalWrite(LED, HIGH);
       } else if (i == 1) {
