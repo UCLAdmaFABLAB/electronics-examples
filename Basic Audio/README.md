@@ -1,6 +1,6 @@
 # Basic Audio
 
-![Circuit Image](https://github.com/UCLAdmaFABLAB/electronics-examples/raw/trunk/Basic%20Audio/Feather32u4_PiezoBuzzer.png)
+![Circuit Image](Feather32u4_PiezoBuzzer.png)
 
 A Piezoelectric element (piezo for short) converts electrical to physical energy. Adding current makes it move, and moving it creates a current. Once the piezo is connected, you can create a tone using the tone command.
 
