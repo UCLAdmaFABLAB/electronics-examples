@@ -20,7 +20,7 @@ const int STEP_PIN = 6;
 
 const int STEPS_PER_ROTATION = 200;
 const int MICROSTEPS = 8; //M0 floating, M1 Low. This should match microstepping pin config.
-const int RPM = 100; // Change this to adjust speed of movement. Acceptable range is about 10 - 200;
+const int RPM = 150; // Change this to adjust speed of movement. Acceptable range is about 10 - 200;
 
 const int MICROSTEPS_PER_ROTATION = STEPS_PER_ROTATION * MICROSTEPS;
 
@@ -47,7 +47,7 @@ void loop() {
     numSteps++;
   } else {
     delay(1000);
-    dirBackward = !dirBackward;
+    // dirBackward = !dirBackward;
     numSteps = 0;
   }
 }

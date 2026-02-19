@@ -9,15 +9,10 @@ Laurentiu Badea
   A1 -> green
 
 */
-#include <Arduino.h>
 #include "DRV8880.h"
 
 const int MOTOR_STEPS = 200;
 const int RPM = 120;
-
-// Since microstepping is set externally, make sure this matches the selected mode
-// If it doesn't, the motor will move at a different RPM than chosen
-// 1=full step, 2=half step etc.
 const int MICROSTEPS = 8;
 
 const int DIR = 5;
@@ -36,5 +31,5 @@ void loop() {
     // Moving motor to original position using steps
     stepper.move(-MOTOR_STEPS*MICROSTEPS);
 
-    delay(5000);
+    delay(2000);
 }
