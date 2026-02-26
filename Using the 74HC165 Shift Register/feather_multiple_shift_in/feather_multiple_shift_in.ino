@@ -2,10 +2,16 @@
  * Feather 32u4 + 74HC165 Shift Register Internet Keyboard
  * Uses: https://github.com/InfectedBytes/ArduinoShiftIn for the shift register
  * 
+ * Whenever a button state changes, will print the state of all buttons
  * Created: Feb, 2026
  * 
+ * If using platformio, be sure to add:
+ * lib_deps = https://github.com/InfectedBytes/ArduinoShiftIn
+ * to the platformio.ini
+ *
  */
 
+#include <Arduino.h>
 #include <ShiftIn.h>
 
 const int BUTTON0 = 0;
@@ -18,45 +24,45 @@ const int BUTTON6 = 6;
 const int BUTTON7 = 7;
 
 // shift register pins
-const int pLoadPin = 8;
-const int clockEnablePin = 9;
+const int pLoadPin = 9;
+const int clockEnablePin = 10;
 const int dataPin = 11;
-const int clockPin = 5;
+const int clockPin = 12;
 
 
-
-// Init ShiftIn instance with two chip.
+// Init ShiftIn instance with one chip.
 ShiftIn<2> shift;
 
 void setup() {
+  Serial.begin(9600);
   shift.begin(pLoadPin, clockEnablePin, dataPin, clockPin);
 }
 
 void loop() {
   if (shift.update()) {
+    if (shift.state(BUTTON0)) {
+      Serial.println("Button 0 is pressed.");
+    }
     if (shift.state(BUTTON1)) {
-      Serial.println("Button 1 was pressed.");
+      Serial.println("Button 1 is pressed.");
     }
     if (shift.state(BUTTON2)) {
-      Serial.println("Button 2 was pressed.");
+      Serial.println("Button 2 is pressed.");
     }
     if (shift.state(BUTTON3)) {
-      Serial.println("Button 3 was pressed.");
+      Serial.println("Button 3 is pressed.");
     }
     if (shift.state(BUTTON4)) {
-      Serial.println("Button 4 was pressed.");
+      Serial.println("Button 4 is pressed.");
     }
     if (shift.state(BUTTON5)) {
-      Serial.println("Button 5 was pressed.");
+      Serial.println("Button 5 is pressed.");
     }
     if (shift.state(BUTTON6)) {
-      Serial.println("Button 6 was pressed.");
+      Serial.println("Button 6 is pressed.");
     }
     if (shift.state(BUTTON7)) {
-      Serial.println("Button 7 was pressed.");
-    }
-    if (shift.state(BUTTON8)) {
-      Serial.println("Button 8 was pressed.");
+      Serial.println("Button 7 is pressed.");
     }
     delay(1);
   }
