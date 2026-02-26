@@ -2,9 +2,13 @@
 
 This code uses the [ShiftIn](https://github.com/InfectedBytes/ArduinoShiftIn) library to make handling the shift register easy.
 
-*If you are using platformio, be sure to add:*
+### For PlatformIO
+
+Be sure to add:
+
 `lib_deps = https://github.com/InfectedBytes/ArduinoShiftIn`
-to the platformio.ini
+
+to the platformio.ini to use the library
 
 
 ## Single Shift in
