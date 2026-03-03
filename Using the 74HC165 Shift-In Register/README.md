@@ -7,14 +7,6 @@ This code uses the [ShiftIn](https://github.com/InfectedBytes/ArduinoShiftIn) li
 ![a pin diagram](74HC165_pinout.png)
 
 
-
-
-
-PIN Number
-PIN Name
-
-
-
 | PIN Number  | PIN Name | Description |
 | ------------- | ------------- | ------------- |
 | Pin 1 | LD | Active-low load pin, loads parallel data into the register when low
@@ -28,16 +20,23 @@ PIN Name
 | Pins 3-6, 11-14 | D0-D7 | Parallel input pins where the data is loaded into the shift register |
 
 
+const int pLoadPin = 9;
+const int clockEnablePin = 10;
+const int dataPin = 11;
+const int clockPin = 12;
+
+
 ## Single Shift in
 The first example `feather_shift_in_single` is for using a single 74HC165 to add 4 additional inputs (the chip requires 4 to work, and gives you 8 total, hence 4)
 
-![a circuit board](feather_shift_in_single.png)
+![a circuit board](circuits/feather_shift_in_single.png)
+
 
 
 ## Multiple Shift in
 The second example `feather_shift_in_multiple` shows how to use two 74HC165 to add 12 additional inputs (the chip requires 4 to work, and each shift register gives 8, so 12 total)
 
-![a circuit board](feather_shift_in_multiple.png)
+![a circuit board](circuits/feather_shift_in_multiple.png)
 
 ### For PlatformIO
 

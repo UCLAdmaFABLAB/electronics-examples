@@ -24,10 +24,10 @@ const int BUTTON6 = 6;
 const int BUTTON7 = 7;
 
 // shift register pins
-const int pLoadPin = 9;
-const int clockEnablePin = 10;
-const int dataPin = 11;
-const int clockPin = 12;
+const int LD_PIN = 9;
+const int CE_PIN = 10;
+const int Q7_PIN = 11;
+const int CLK_PIN = 12;
 
 
 // Init ShiftIn instance with one chip.
@@ -35,7 +35,7 @@ ShiftIn<1> shift;
 
 void setup() {
   Serial.begin(9600);
-  shift.begin(pLoadPin, clockEnablePin, dataPin, clockPin);
+  shift.begin(LD_PIN, CE_PIN, Q7_PIN, CLK_PIN);
 }
 
 void loop() {
