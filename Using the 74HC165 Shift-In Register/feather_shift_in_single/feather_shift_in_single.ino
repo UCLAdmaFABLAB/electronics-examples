@@ -41,28 +41,28 @@ void setup() {
 void loop() {
   if (shift.update()) {
     if (shift.state(BUTTON0)) {
-      Serial.println("Button 0 is pressed.");
+      Serial.println("Button 0 was pressed.");
     }
     if (shift.state(BUTTON1)) {
-      Serial.println("Button 1 is pressed.");
+      Serial.println("Button 1 was pressed.");
     }
     if (shift.state(BUTTON2)) {
-      Serial.println("Button 2 is pressed.");
+      Serial.println("Button 2 was pressed.");
     }
     if (shift.state(BUTTON3)) {
-      Serial.println("Button 3 is pressed.");
+      Serial.println("Button 3 was pressed.");
     }
     if (shift.state(BUTTON4)) {
-      Serial.println("Button 4 is pressed.");
+      Serial.println("Button 4 was pressed.");
     }
     if (shift.state(BUTTON5)) {
-      Serial.println("Button 5 is pressed.");
+      Serial.println("Button 5 was pressed.");
     }
     if (shift.state(BUTTON6)) {
-      Serial.println("Button 6 is pressed.");
+      Serial.println("Button 6 was pressed.");
     }
     if (shift.state(BUTTON7)) {
-      Serial.println("Button 7 is pressed.");
+      Serial.println("Button 7 was pressed.");
     }
     delay(1);
   }
